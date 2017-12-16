@@ -8,7 +8,8 @@ general_url = 'https://www.codeacademy.com/{username}'
 
 
 def fetch_data(url):
-    url_handle = urllib.request.urlopen(url)
+    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+    url_handle = urllib.request.urlopen(req)
     # Data we read is not unicode so we need to decode
     data = url_handle.read().decode()
     return data

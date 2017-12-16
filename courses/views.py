@@ -17,7 +17,8 @@ def result(request):
         if form.is_valid():
             # Scrape the data and
             # redirect to a new URL:
-            person = Scrape(form.username)
+            username = form.cleaned_data['username']
+            person = Scrape(username)
             context = {
                 'courses': person.courses,
             }
