@@ -18,6 +18,6 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    url(r'^index', views.index, name='index'),
-    # url(r'^result', name='result')
+    url(r'^query.html', views.query, name='query'),
+    url(r'^result.html', views.result, name='result'),
 ]
