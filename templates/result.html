@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Courses Completed</title>
+</head>
+<body>
+{% if courses %}
+    <table>
+    <tr>
+        <th>Course Name</th>
+        <th>Percent Completed</th>
+    </tr>
+    {% for course in courses %}
+        <tr>
+        {% for row in course %}
+            <td>{{ row }}</td>
+        {% endfor %}
+        </tr>
+    {% endfor %}
+    </table>
+{% else %}
+    Sorry You haven't completed any courses.
+{% endif %}
+</body>
+</html>
