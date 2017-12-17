@@ -10,3 +10,30 @@
 /*
 Start the styles here.
 */
+
+body{
+	background-color: #FFFFCC;
+}
+#heading{
+	text-align: center;
+	color:#330066;
+	font-size: 50px;
+	font-family: "Times New Roman", Times, serif;
+
+}
+
+#subheading{
+	text-align: center;
+	margin-top: 70px;
+}
+
+#username{
+	text-align: center;
+	margin-top: 40px;
+	
+}
+
+#Submit{
+	text-align: center;
+	margin-top: 20px;
+}
