@@ -1,15 +1,23 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
     <title>Home</title>
 </head>
 <body>
+<h1 id="heading" ">CODECADEMY COURSES </h1>
+<h2 id="subheading">To fetch all your completed courses, fill the information below:<h2>
 <form action="result.html" method="post">
     {% csrf_token %}
-    <label for="username">Your username: </label>
-    <input id="username" type="text" name="username">
-    <input type="submit" value="Submit" />
+    <div id="username">
+    <label for="username" >Your username: </label>
+    <input type="text" name="username">
+    </div>
+    <div id="Submit">
+    <input type="submit" value="Submit"/>
+	</div>
 </form>
 </body>
 </html>
