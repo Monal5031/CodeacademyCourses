@@ -36,4 +36,4 @@ $ python manage.py makemigrations
 $ python manage.py migrate
 ```
 ### Author :pencil:
-©️ [balwanishivam](https://github.com/balwanishivam) :tada:
+©️ [Monal5031](https://github.com/Monal5031) :tada:
